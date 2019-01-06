@@ -1,0 +1,51 @@
+html {
+    font-size: 30px;
+    @media (max-width: 570px) {
+      font-size: 50px;
+    }
+}
+
+.box {
+    background: url(./printImage.jpg); /* 実際にはjQueryでスライダーを実装 */
+    width: 100%;
+    border-top-width: 10px;
+}
+
+input[type=text] {
+    align: left;
+    width: 80%;
+    height: 30px;
+    background-color: #ffffe0;
+}
+button {
+    align: right;
+    width: 19%;
+    height: 30px;
+    font-size: 16px;
+}
+img {
+    width: 128px;
+}
+.printImg {
+    display: none;
+}
+
+.nedan {
+    font-size: 20px;
+}
+@media print {
+    .box {
+        display: none;
+    }
+    .printImg {
+        display: block;
+        position: fixed;
+        top:0;
+        width: 100%;
+    }
+    .printImg img {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+}

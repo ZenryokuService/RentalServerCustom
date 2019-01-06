@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="./tirashi.css">
+	<script>
+		function researchRctn() {
+			var param = document.getElementById('category').value;
+			console.log(param);
+			location.href = "http://zenryokuservice.com/project/rakuten/php/rakutenCatalog.php?category=" + param;
+		}
+	</script>
+</head>
+<body>
+	<div class="textField"><input id="category" type="text" /><button onclick="researchRctn();">再検索</button></div>
+		<table class="box">
+				<tr><td colspan='3'>$items['catchcopy']</td></tr>
+				<tr>
+					<td><img src='./images.jpeg'/ width="128" height="128"></td>
+					<td colsapan='2' rowspan='2'>Bottom</td>
+				</tr>
+		</table>
+		<BR/>
+
+</body>
+</html>
